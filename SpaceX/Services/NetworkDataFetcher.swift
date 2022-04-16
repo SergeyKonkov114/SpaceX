@@ -72,8 +72,6 @@ class NetworkDataFetcher {
         }
     }
     
-    //func fetchRocketsImages()
-    
     private func parseJSON<T: Decodable>(type: T.Type, from data: Data?) -> T? {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
